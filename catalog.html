@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+   <meta charset="utf-8">
+   <title>SEDONA Каталог</title>
+ </head>
+
+ <body>
+ <header class="page-hader">
+    <img class="logo" src="" alt="Логотип СЕДОНА">
+    <nav class="navigation">
+      <ul class="navigation-list"> 
+        <li class="navigation-item">
+          <a class="navigation-list" href="index.html">Главная</a> <!--Внимание изменить ссылку-->
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-list" href="#">О седоне</a> <!--Внимание изменить ссылку-->
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-list navigation-link-current" href="catalog.html">Гостиницы</a> <!--Внимание изменить ссылку. почему в фигме страницы на русском?-->
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избранное.</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-button" href="#">ХОЧУ СЮДА!</a>
+        </li>
+      </ul>
+    </nav>
+   </header>
+
+   <main class="main-index">
+    <h1 class="visually-hidden">Гостиницы Седоны</h1>
+    <!--Ссылка на домой, дописать-->
+    <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Инфраструктура:</legend>
+        <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="bed-head-for-men">Басcейн
+              </label>
+            </li>
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>Парковка
+          </label>
+        </li>
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="so-intense" checked>Wi-Fi
+          </label>
+        </li>
+        </ul>
+      </fieldset>
+      
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Тип жилья:</legend>
+        <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="bed-head-for-men">Гостиница
+              </label>
+            </li>
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>Мотель
+          </label>
+        </li>
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="so-intense" checked>Апартаменты
+          </label>
+        </li>
+        </ul>
+      </fieldset>
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Стоимость, ₽:</legend> <!--как сделать окошки и линию выбора?-->
+      </fieldset>
+    
+      <h1 class="visually-hidden">Найдено страниц:</h1><!--Найдено страниц: поле с расчетом? -->
+      <select class="select-control" aria-label="Сортировка">
+        <option value="popular">Сначала популярное</option>
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="expensive">Сначала дорогое</option>
+      </select>
+      
+      <a href="#" class="button button-light">
+        <span class="visually-hidden">Показать список</span>
+      </a>
+    
+      <ul class="product-list"><!--Вопрос: как правильно назвать класс вместо product?-->
+        <li class="product-card">
+          <a class="product-card-link" href="product.html">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Amara Resort & Spa</h3>
+            <p class="product-card-title">Гостиница</p>
+          </a>
+          <span class="product-card-price">От 4000₽</span>
+          <a class="product-card-button button" href="#">Подробнее</a>
+          <a class="product-card-button button" href="#">В избранное</a> 
+          <!--как обернуть, что бы нижестоящие элементы были на нижней строчке, исполь
+          зовать список? -->>
+          <img class="product-card-image" src="" alt="Количество звезд отеля"> <!--Картинка звездочек к гостинице, как сделать?-->
+          <img class="product-card-image" src="" alt="Рейтинг гостиницы"> <!--Рейтинг гостиницы, как сделать?-->
+        </li>
+        <li class="product-card">
+              <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="" alt="">
+                <h3 class="product-card-title">Desert Quail Inn</h3>
+                <p class="product-card-title">Гостиница</p>
+              </a>
+              <span class="product-card-price">От 3000₽</span>
+              <a class="product-card-button button" href="#">Подробнее</a>
+              <a class="product-card-button button" href="#">В избранное</a>
+              <img class="product-card-image" src="" alt=""> <!--Картинка звездочек к гостинице, как сделать?-->
+              <img class="product-card-image" src="" alt=""> <!--Рейтинг гостиницы, как сделать?-->
+            </li>
+        <li class="product-card">
+            <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="" alt="">
+                <h3 class="product-card-title">Villas at Poco Diablo</h3>
+                <p class="product-card-title">Гостиница</p>
+            </a>
+                <span class="product-card-price">От 2000₽</span>
+                <a class="product-card-button button" href="#">Подробнее</a>
+                <a class="product-card-button button" href="#">В избранное</a>
+                <img class="product-card-image" src="" alt=""> <!--Картинка звездочек к гостинице, как сделать?-->
+                <img class="product-card-image" src="" alt=""> <!--Рейтинг гостиницы, как сделать?-->
+        </li>
+        <li class="product-card">
+            <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="" alt="">
+                <h3 class="product-card-title">GreenTree Inn</h3>
+                <p class="product-card-title">Гостиница</p>
+            </a>
+                <span class="product-card-price">От 3000₽</span>
+                <a class="product-card-button button" href="#">Подробнее</a>
+                <a class="product-card-button button" href="#">В избранное</a>
+                <img class="product-card-image" src="" alt=""> <!--Картинка звездочек к гостинице, как сделать?-->
+                <img class="product-card-image" src="" alt=""> <!--Рейтинг гостиницы, как сделать?-->
+        </li>    
+      </ul>     
+       
+    <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+        <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+        <section class="appointment">
+            <h2 class="appointment-title">Подпишитесь на рассылку</h2> <!--Почитать как сделать окно-->
+            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+                    
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="newsletter-email">Email</label>
+                <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                <button class="button" type="submint">Подписаться</button>
+             </form>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <section class="footer-social">
+           <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button" href="#">
+                  <span class="visually-hidden">Твиттер</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="#">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+            </ul>
+            <section class="contakt-phone"></section>
+            <p class="contakt-phone">+ 7 (812) 812-12-12</p>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+        </section>
+    </footer>
+   </body>
+</html>
