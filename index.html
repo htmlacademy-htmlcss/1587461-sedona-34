@@ -4,22 +4,25 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
-    <header class="page-hedaer">
-      <img class="logo" src="#" alt="Логотип Городка Седона">
+    <header class="page-header">
+      <a class="navigation-logo" href="index.html">
+        <img class="logo" src="" alt="Логотип СЕДОНА">
+       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="Catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
@@ -43,223 +46,98 @@
     
     <main class="main-index">
       <h1 class="visually-hidden">Городок Седона</h1>
-
+      <img class="logo" src="" alt="Логотип СЕДОНА"> 
+      <section class="advantages">
+     <h1 class="advantages-title">Седона — небольшой городок в Аризоне,
+       заслуживающий большего!</h1> 
+       <p class="advantages-title-reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p> <!--вопрос по классу-->
+        <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+          <h3 class="advantages-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+       <p class="advantages-description-list">№1</p>
+       <p class="advantages-description">Седона — не аттракцион для туристов, там течёт 
+         своя жизнь</p>
+         <img src="" alt="Фотография городка"> 
+          <ul class="advantages-list">
+           <li class="advantages-item">
+             <h4 class="advantages-title">Жильё</h4>
+             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+           </li>
+           <li class="advantages-item">
+             <h4 class="advantages-title">Еда</h4>
+             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+           </li>
+           <li class="advantages-item">
+             <h4 class="advantages-title">Сувениры</h4>
+             <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+           </li>
+         </ul>
+     </li>
+       <img src="" alt="Фотография гор"> 
+     <li class="advantages-item">
+       <h3 class="advantages-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+       <p class="advantages-description-list">№2</p>
+       <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+     </li>
+     <li class="advantages-item">
+       <h3 class="advantages-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+       <p class="advantages-description-list">№3</p>
+       <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+     </li>
+     <li class="advantages-item">
+       <h3 class="advantages-title">КРАСИВАЯ ДОРОГА</h3>
+       <p class="advantages-description-list">№4</p>
+       <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+     </li>
+     <li class="advantages-item">
+       <h3 class="advantages-title">Мало туристов</h3>
+       <p class="advantages-description-list">№5</p>
+       <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+     </li>
+   </ul>
+ </section>
+ <section class="appointment">
+   <h2 class="appointment-title">Заинтересовались?</h2>
+   <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+     </p>
+     <a class="navigation-link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+ </section>
+    <section class="appointment">
+     <h2 class="appointment-title">Подпишитесь на рассылку</h2> <!--Почитать как сделать окно-->
+     <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+         <label for="newsletter-email">Email</label>
+         <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+         <button class="button" type="submint">Подписаться</button>               
+       </form>
+     </section>
+   </main>
+ <footer class="page-footer">
+   <section class="footer-social">
+      <ul class="footer-social-list">
+         <li class="footer-social-item">
+           <a class="button" href="#">
+             <span class="visually-hidden">Твиттер</span>
+           </a>
+         </li>
+         <li class="footer-social-item">
+           <a class="button" href="#">
+             <span class="visually-hidden">Фейсбук</span>
+           </a>
+         </li>
+         <li class="footer-social-item">
+           <a class="button" href="#">
+             <span class="visually-hidden">Ютуб</span>
+           </a>
+         </li>
+       </ul>
+       <section class="contakt-phone"></section>
+       <p class="contakt-phone">+ 7 (812) 812-12-12</p>
+       <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+     </section>
+ </footer>
     </main>
-
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-    <footer>
-
-    </footer>
+   
   </body>
-</html>
 
-<!DOCTYPE html>
-<html lang="ru">
- <head>
-   <meta charset="utf-8">
-   <title>SEDONA Каталог</title>
- </head>
-
- <body>
- <header class="page-hader">
-    <img class="logo" src="" alt="Логотип СЕДОНА">
-    <nav class="navigation">
-      <ul class="navigation-list"> 
-        <li class="navigation-item">
-          <a class="navigation-list" href="index.html">Главная</a> <!--Внимание изменить ссылку-->
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-list" href="#">О седоне</a> <!--Внимание изменить ссылку-->
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-list navigation-link-current" href="catalog.html">Гостиницы</a> <!--Внимание изменить ссылку. почему в фигме страницы на русском?-->
-        </li>
-      </ul>
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Избранное.</span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link-button" href="#">ХОЧУ СЮДА!</a>
-        </li>
-      </ul>
-    </nav>
-   </header>
-
-   <main class="main-index">
-    <h1 class="visually-hidden">Гостиницы Седоны</h1>
-    <!--Ссылка на домой, дописать-->
-    <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Инфраструктура:</legend>
-        <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="bed-head-for-men">Басcейн
-              </label>
-            </li>
-        <li class="catalog-filter-item">
-          <label class="control">
-            <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>Парковка
-          </label>
-        </li>
-        <li class="catalog-filter-item">
-          <label class="control">
-            <input class="control-input" type="checkbox" name="so-intense" checked>Wi-Fi
-          </label>
-        </li>
-        </ul>
-      </fieldset>
-      
-      <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Тип жилья:</legend>
-        <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="bed-head-for-men">Гостиница
-              </label>
-            </li>
-        <li class="catalog-filter-item">
-          <label class="control">
-            <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>Мотель
-          </label>
-        </li>
-        <li class="catalog-filter-item">
-          <label class="control">
-            <input class="control-input" type="checkbox" name="so-intense" checked>Апартаменты
-          </label>
-        </li>
-        </ul>
-      </fieldset>
-      <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Стоимость, ₽:</legend> <!--как сделать окошки и линию выбора?-->
-      </fieldset>
-    
-      <h1 class="visually-hidden">Найдено страниц:</h1><!--Найдено страниц: поле с расчетом? -->
-      <select class="select-control" aria-label="Сортировка">
-        <option value="popular">Сначала популярное</option>
-        <option value="cheap">Сначала дешёвое</option>
-        <option value="expensive">Сначала дорогое</option>
-      </select>
-      
-      <a href="#" class="button button-light">
-        <span class="visually-hidden">Показать список</span>
-      </a>
-    
-      <ul class="product-list"><!--Вопрос: как правильно назвать класс вместо product?-->
-        <li class="product-card">
-          <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
-            <h3 class="product-card-title">Amara Resort & Spa</h3>
-            <p class="product-card-title">Гостиница</p>
-          </a>
-          <span class="product-card-price">От 4000₽</span>
-          <a class="product-card-button button" href="#">Подробнее</a>
-          <a class="product-card-button button" href="#">В избранное</a> 
-          <!--как обернуть, что бы нижестоящие элементы были на нижней строчке, исполь
-          зовать список? -->>
-          <img class="product-card-image" src="" alt="Количество звезд отеля"> <!--Картинка звездочек к гостинице, как сделать?-->
-          <img class="product-card-image" src="" alt="Рейтинг гостиницы"> <!--Рейтинг гостиницы, как сделать?-->
-        </li>
-        <li class="product-card">
-              <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="" alt="">
-                <h3 class="product-card-title">Desert Quail Inn</h3>
-                <p class="product-card-title">Гостиница</p>
-              </a>
-              <span class="product-card-price">От 3000₽</span>
-              <a class="product-card-button button" href="#">Подробнее</a>
-              <a class="product-card-button button" href="#">В избранное</a>
-              <img class="product-card-image" src="" alt=""> <!--Картинка звездочек к гостинице, как сделать?-->
-              <img class="product-card-image" src="" alt=""> <!--Рейтинг гостиницы, как сделать?-->
-            </li>
-        <li class="product-card">
-            <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="" alt="">
-                <h3 class="product-card-title">Villas at Poco Diablo</h3>
-                <p class="product-card-title">Гостиница</p>
-            </a>
-                <span class="product-card-price">От 2000₽</span>
-                <a class="product-card-button button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранное</a>
-                <img class="product-card-image" src="" alt=""> <!--Картинка звездочек к гостинице, как сделать?-->
-                <img class="product-card-image" src="" alt=""> <!--Рейтинг гостиницы, как сделать?-->
-        </li>
-        <li class="product-card">
-            <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="" alt="">
-                <h3 class="product-card-title">GreenTree Inn</h3>
-                <p class="product-card-title">Гостиница</p>
-            </a>
-                <span class="product-card-price">От 3000₽</span>
-                <a class="product-card-button button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранное</a>
-                <img class="product-card-image" src="" alt=""> <!--Картинка звездочек к гостинице, как сделать?-->
-                <img class="product-card-image" src="" alt=""> <!--Рейтинг гостиницы, как сделать?-->
-        </li>    
-      </ul>     
-       
-    <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-        <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
-              </li>
-        <section class="appointment">
-            <h2 class="appointment-title">Подпишитесь на рассылку</h2> <!--Почитать как сделать окно-->
-            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-                    
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="newsletter-email">Email</label>
-                <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-                <button class="button" type="submint">Подписаться</button>
-             </form>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <section class="footer-social">
-           <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">Твиттер</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">Фейсбук</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">Ютуб</span>
-                </a>
-              </li>
-            </ul>
-            <section class="contakt-phone"></section>
-            <p class="contakt-phone">+ 7 (812) 812-12-12</p>
-            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
-        </section>
-    </footer>
-   </body>
-</html>
