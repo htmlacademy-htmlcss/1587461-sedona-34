@@ -14,6 +14,7 @@
       <a class="navigation-logo">
         <img class="logo" src="images/logo.png" width="139" height="70" alt="Логотип СЕДОНА">
       </a>
+
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -26,6 +27,7 @@
             <a class="navigation-link" href="Catalog.html">Гостиницы</a>
           </li>
         </ul>
+
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="images/search.svg">
@@ -38,7 +40,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+            <a class="navigation-link-button" href="#" >ХОЧУ СЮДА!</a>
           </li>
         </ul>
       </nav>
@@ -47,9 +49,9 @@
 
     <main class="main-index">
 
-      <!--Шапка-->
+      <!--Логотип-->
     <section class="intro">
-      <!--<h1 class="visually-hidden">Городок Седона</h1>-->
+      <h1 class="visually-hidden">Городок Седона</h1>
       <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепный город Седона!">
     </section>
 
@@ -59,50 +61,59 @@
         <p class="advantages-title-reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
 
       <!--Рекламный блок-->
-        <h2 class="visually-hidden">Преимущества</h2>
+       <!--1 блок-->
+      <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list">
-            <li class="advantages-item">
-          <h3 class="advantages-title-foto">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="advantages-description-list">№1</p>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт
+            <li class="advantages-item-foto">
+              <h3 class="advantages-title-foto">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p class="advantages-description-foto">№1</p>
+              <p class="advantages-description slogan-foto">Седона — не аттракцион для туристов, там течёт
          своя жизнь</p>
             <img src="images/town.jpg"width="800" height="384"  alt="Фотография городка">
 
           <ul class="advantages-list">
-           <li class="advantages-item">
+           <li class="advantages-item advantages-housing">
               <img src="images/icons-advice/house.svg" width="75" height="72"  alt="Изображение домик">
              <h4 class="advantages-title">Жильё</h4>
              <p class="advantages-description-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
            </li>
-           <li class="advantages-item">
+
+           <li class="advantages-item advantages-meal">
              <img src="images/icons-advice/food.svg" width="74" height="70"  alt="Изображение бургера">
-             <h4 class="advantages-title ">Еда</h4>
+             <h4 class="advantages-title">Еда</h4>
              <p class="advantages-description-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
            </li>
-           <li class="advantages-item">
+           <li class="advantages-item advantages-souvenirs">
             <img src="images/icons-advice/gift.svg" width="64" height="76"  alt="Изображение подарка">
             <h4 class="advantages-title">Сувениры</h4>
              <p class="advantages-description-desc">Не только китайского, но и настоящего местного производства!</p>
            </li>
          </ul>
-         <img src="images/mountains.jpg" width="800" height="384" alt="Фотография гор">
 
-       <li class="advantages-item">
-        <h3 class="advantages-title-foto">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-       <p class="advantages-description-list">№2</p>
-       <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-     </li>
-     <li class="advantages-item">
-       <h3 class="advantages-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-       <p class="advantages-description-list">№3</p>
-       <p class="advantages-description-desc">Все достопримечательности находятся очень близко</p>
-     </li>
-     <li class="advantages-item">
+      <!--2 блок-->
+         <img src="images/mountains.jpg" width="800" height="384" alt="Фотография гор">
+          <li class="advantages-item-foto">
+           <h3 class="advantages-title-foto">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+            <p class="advantages-description foto-list">№2</p>
+            <p class="advantages-description slogan-foto">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+
+      <!--3 блок-->
+          <li class="advantages-item advantages-area">
+           <h3 class="advantages-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+             <p class="advantages-description-list">№3</p>
+            <p class="advantages-description-desc">Все достопримечательности находятся очень близко</p>
+          </li>
+      <!--4 блок-->
+
+     <li class="advantages-item advantages-road">
        <h3 class="advantages-title">КРАСИВАЯ ДОРОГА</h3>
        <p class="advantages-description-list">№4</p>
        <p class="advantages-description-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
      </li>
-     <li class="advantages-item">
+
+     <!--5 блок-->
+     <li class="advantages-item advantages-tourists">
        <h3 class="advantages-title">Мало туристов</h3>
        <p class="advantages-description-list">№5</p>
        <p class="advantages-description-desc">Большинство едет в Гранд Каньон и толпится там</p>
@@ -112,13 +123,13 @@
 
  <section class="appointment">
    <p class="appointment-title">Заинтересовались?</p>
-    <span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+    <span class="appointment-interested">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</span>
      <a class="navigation-link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
   </section>
 
   <section class="newsletter">
     <p class="newsletter-title">Подпишитесь на рассылку</p>
-      <span>Только полезная информация и никакого спама, честное бойскаутское!</span>
+      <span class="newsletter-information">Только полезная информация и никакого спама, честное бойскаутское!</span>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email">Email</label>
         <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>

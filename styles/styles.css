@@ -13,7 +13,7 @@
     font-weight: 700;
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
-   }
+}
 
    body {
     font-family: "PT Sans", sans-serif;
@@ -30,38 +30,164 @@
      background-color: #ffffff;
   }
 
-  .navigation-link {
+  .navigation-list {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    color: #000000;
+  }
+
+  .navigation-link {
+
     text-transform: capitalize;
     color: inherit;
   }
 
+  .navigation-link-button {
+    position: absolute;
+    width: 160px;
+    height: 37px;
+    background: #756157;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+/*Рекламный блок*/
   .intro {
-    background-image: url("/images/background-mountains.jpg");
+    background-image: url("../images/background-mountains.jpg");
     background-size: 100% auto;
+    width: 1200px;
+  height: 485px;
     background-repeat: no-repeat;
     text-align: center;
   }
 
-  .advantages-title {
-    font-size: 30px;
-    line-height: 36px;
+  .advantages-item {
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+
+  .advantages-item-foto {
+    width: 400px;
+    height: 384px;
+    text-align: center;
+    background: #82B3D3;
+    color: #FFFFFF;
+  }
+
+  .advantages-title-foto {
     font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .slogan-foto {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
     text-align: center;
     text-transform: uppercase;
   }
+
+  .advantages-description-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+  }
+
   .advantages-title-reason {
     text-align: center;
     color: #333333;
   }
 
+  .advantages-title-foto {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+
+.advantages-housing, .advantages-souvenirs {
+  background: rgba(131, 179, 211, 0.12);
+
+}
+
+.advantages-meal {
+  background: #FFFFFF;
+}
+
+.advantages-area, .advantages-tourists {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-road {
+background: rgba(131, 179, 211, 0.2);
+}
+
+.appointment {
+  width: 1200px;
+  height: 417px;
+  color: #000000;
+  text-align: center;
+}
+
+
+.appointment-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.appointment-interested  {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.newsletter {
+  background-image: url("../images/newsletter.jpg");
+  width: 1200px;
+  height: 411px;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.newsletter-information {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*Футер*/
+
 .page-footer {
   background: #FFFFFF;
   color: #000000;
   align-items: center;
-
+  width: 1200px;
+  height: 120px;
 }
 
 .footer-social-list {
