@@ -31,10 +31,49 @@
   }
 
   .navigation-link {
-    font-family: 'PT Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     text-transform: capitalize;
+    color: inherit;
   }
+
+  .intro {
+    background-image: url("/images/background-mountains.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .advantages-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .advantages-title-reason {
+    text-align: center;
+    color: #333333;
+  }
+
+.page-footer {
+  background: #FFFFFF;
+  color: #000000;
+  align-items: center;
+
+}
+
+.footer-social-list {
+  color:#83B3D3;
+
+}
+
+.contacts-phone {
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+color: inherit;
+text-align: center;
+text-transform: uppercase;
+}
