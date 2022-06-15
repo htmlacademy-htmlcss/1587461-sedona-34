@@ -60,7 +60,7 @@
     background-image: url("../images/background-mountains.jpg");
     background-size: 100% auto;
     width: 1200px;
-  height: 485px;
+    height: 485px;
     background-repeat: no-repeat;
     text-align: center;
   }
@@ -202,4 +202,173 @@ line-height: 40px;
 color: inherit;
 text-align: center;
 text-transform: uppercase;
+}
+
+/*Catalog*/
+.catalog-filterr {
+  background-image: url("../images/background-filter.jpg");
+  width: 1200px;
+  height: 403px;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.control-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-filter-button {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button-apply {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-reset {
+  font-weight: 400;
+}
+
+.results-card {
+  text-decoration: none;
+
+}
+
+.results-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.results-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.results-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.button-detailed, .button-choice {
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-detailed {
+background: #756157;
+}
+
+.button-choice {
+  background: #82B3D3;
+}
+
+.results-card-image {
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+
+
+.pagination-current {
+  background: #F2F2F2;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  background: #82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: #000000;
+
+}
+
+.pagination-quantity {
+color: #333333;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+
+.appointment-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.appointment-list {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.field-email {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.button-email {
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
