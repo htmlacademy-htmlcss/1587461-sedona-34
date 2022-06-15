@@ -1,0 +1,374 @@
+
+@font-face {
+ font-family: "PT Sans";
+ font-style: normal;
+ font-weight: 400;
+ src: url("../fonts/ptsans-400.woff2") format("woff2");
+ font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+   body {
+    font-family: "PT Sans", sans-serif;
+    font-style: 22px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #F2F2F2;
+   }
+
+/* Pages */
+
+   .page-header {
+     color: #000000;
+     background-color: #ffffff;
+  }
+
+  .navigation-list {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  .navigation-link {
+
+    text-transform: capitalize;
+    color: inherit;
+  }
+
+  .navigation-link-button {
+    position: absolute;
+    width: 160px;
+    height: 37px;
+    background: #756157;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+/*Рекламный блок*/
+  .intro {
+    background-image: url("../images/background-mountains.jpg");
+    background-size: 100% auto;
+    width: 1200px;
+    height: 485px;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .advantages-item {
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+
+  .advantages-item-foto {
+    width: 400px;
+    height: 384px;
+    text-align: center;
+    background: #82B3D3;
+    color: #FFFFFF;
+  }
+
+  .advantages-title-foto {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .slogan-foto {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .advantages-description-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+  }
+
+  .advantages-title-reason {
+    text-align: center;
+    color: #333333;
+  }
+
+  .advantages-title-foto {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+
+.advantages-housing, .advantages-souvenirs {
+  background: rgba(131, 179, 211, 0.12);
+
+}
+
+.advantages-meal {
+  background: #FFFFFF;
+}
+
+.advantages-area, .advantages-tourists {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-road {
+background: rgba(131, 179, 211, 0.2);
+}
+
+.appointment {
+  width: 1200px;
+  height: 417px;
+  color: #000000;
+  text-align: center;
+}
+
+
+.appointment-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.appointment-interested  {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.newsletter {
+  background-image: url("../images/newsletter.jpg");
+  width: 1200px;
+  height: 411px;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.newsletter-information {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*Футер*/
+
+.page-footer {
+  background: #FFFFFF;
+  color: #000000;
+  align-items: center;
+  width: 1200px;
+  height: 120px;
+}
+
+.footer-social-list {
+  color:#83B3D3;
+
+}
+
+.contacts-phone {
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+color: inherit;
+text-align: center;
+text-transform: uppercase;
+}
+
+/*Catalog*/
+.catalog-filterr {
+  background-image: url("../images/background-filter.jpg");
+  width: 1200px;
+  height: 403px;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.control-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-filter-button {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button-apply {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-reset {
+  font-weight: 400;
+}
+
+.results-card {
+  text-decoration: none;
+
+}
+
+.results-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.results-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.results-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.button-detailed, .button-choice {
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-detailed {
+background: #756157;
+}
+
+.button-choice {
+  background: #82B3D3;
+}
+
+.results-card-image {
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+
+
+.pagination-current {
+  background: #F2F2F2;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  background: #82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: #000000;
+
+}
+
+.pagination-quantity {
+color: #333333;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+
+.appointment-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.appointment-list {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.field-email {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.button-email {
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
