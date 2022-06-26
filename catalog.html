@@ -10,11 +10,15 @@
   <div class="container">
   <!--Хедер-->
   <header class="page-header">
-    <a class="navigation-logo">
-      <img class="logo" src="images/logo.png" width="139" height="70" alt="Логотип СЕДОНА">
-    </a>
 
     <nav class="navigation">
+
+      <!--<div class="header-logo">-->
+        <a class="navigation-logo">
+        <img class="logo" src="images/logo.png" width="139" height="70" alt="Логотип СЕДОНА">
+        </a>
+      <!--</div>-->
+
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
@@ -26,7 +30,6 @@
           <a class="navigation-link" href="Catalog.html">Гостиницы</a>
         </li>
       </ul>
-
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="images/search.svg">
@@ -39,18 +42,30 @@
           </a>
         </li>
         <li class="navigation-item">
+          <div class="navigation-link navigation-button">
           <a class="navigation-link-button" href="#" >ХОЧУ СЮДА!</a>
+          </div>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="main-container main-index ">
-   <div class="page-container">
+
+  <main class="main-container">
 
     <!--Фильтр блок-->
-    <form class="catalog-filter">
+    <div class="catalog-filter-container">
       <h1 class="catalog-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Каталог</a>
+        </li>
+      </ul>
+
+      <form class="catalog-filter">
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Инфраструктура:</legend>
         <ul class="catalog-filter-list">
@@ -91,93 +106,127 @@
             </li>
           </ul>
       </fieldset>
-      <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+      <fieldset class="catalog-filter-group filter-legend">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
       </fieldset>
       <fieldset class="catalog-filter-button">
               <button class="button-apply" type="submit">Применить</button>
               <button class="button-reset" type="submit">Сбросить</button>
       </fieldset>
     </form>
-
+  </div>
     <!--Каталог отелей-->
-    <div class="results-container">
+
+    <!--<div class="results-container">-->
       <section class="results">
-        <div class="">
+      <div class="results-wrap">
         <h2 class="results-title">Найдено гостиниц:</h2>
+        <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-       <a href="#" class="button button-light">
-         <span class="visually-hidden">Показать список</span>
-       </a>
+        </div>
+        <div class="">
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
        </div>
 
      <!--Bыбранные отели-->
       <ul class="results-list">
+        <!--Отель 1-->
         <li class="results-card">
-          <a class="results-card-link" href="product.html">
             <figure>
               <img class="results-card-image" src="images/catalog-hotels/hotel-1.jpg" width="300" height="211" alt="">
             </figure>
-            <h3 class="results-card-title">Amara Resort & Spa</h3>
-            <p class="results-card-price">Гостиница</p>
-          </a>
-          <span class="results-card-price">От 4000₽</span>
-          <a class="results-card button-detailed" href="#">Подробнее</a>
-          <a class="results-card button-choice" href="#">В избранное</a>
-            <img class="results-card-image" src="#" width="18" height="17" alt="Количество звезд отеля">
-            <img class="results-card-image" src="#" alt="Рейтинг гостиницы">
-        </li>
-        <li class="results-card">
-              <a class="results-card-link" href="product.html">
-                <figure>
-                  <img class="results-card-image" src="images/catalog-hotels/hotel-2.jpg" width="300" height="211" alt="">
-                </figure>
-                <h3 class="results-card-title">Desert Quail Inn</h3>
-                <p class="results-card-price">Гостиница</p>
-              </a>
-              <span class="results-card-price">От 3000₽</span>
+            <a class="results-card-link" href="product.html">
+              <h3 class="results-card-title">Amara Resort & Spa</h3>
+            </a>
+            <div class="results-card-price">
+              <p class="results-card-price">Гостиница</p>
+              <span class="results-card-price">От 4000₽</span>
+            </div>
+            <div class="results-card-button">
               <a class="results-card button-detailed" href="#">Подробнее</a>
               <a class="results-card button-choice" href="#">В избранное</a>
-                <img class="results-card-image" src="#" width="18" height="17" alt="">
-                <img class="results-card-image" src="#" alt="Рейтинг гостиницы">
-        </li>
+            </div>
+            <div class="results-card-image-inner">
+              <img class="results-card-image" src="#" width="18" height="17" alt="Звезды отеля">
+              <img class="results-card-image" src="#" alt="Рейтинг гостиницы">
+            </div>
+          </li>
+<!--Отель 2-->
         <li class="results-card">
+          <figure>
+            <img class="results-card-image" src="images/catalog-hotels/hotel-2.jpg" width="300" height="211" alt="">
+          </figure>
             <a class="results-card-link" href="product.html">
+              <h3 class="results-card-title">Desert Quail Inn</h3>
+            </a>
+              <div class="results-card-price">
+                <p class="results-card-price">Гостиница</p>
+                <span class="results-card-price">От 3000₽</span>
+              </div>
+              <div class="results-card-button">
+                <a class="results-card button-detailed" href="#">Подробнее</a>
+                <a class="results-card button-choice" href="#">В избранное</a>
+              </div>
+              <div class="results-card-image-inner">
+                <img class="results-card-image" src="#" width="18" height="17" alt="Звезды отеля">
+                <img class="results-card-image" src="#" alt="Рейтинг гостиницы">
+              </div>
+              </li>
+<!--Отель 3-->
+
+            <li class="results-card">
               <figure>
                 <img class="results-card-image" src="images/catalog-hotels/hotel-3.jpg" width="300" height="211" alt="">
               </figure>
+              <a class="results-card-link" href="product.html">
                 <h3 class="results-card-title">Villas at Poco Diablo</h3>
+              </a>
+              <div class="results-card-price">
                 <p class="results-card-price">Гостиница</p>
-            </a>
                 <span class="results-card-price">От 2000₽</span>
+              </div>
+              <div class="results-card-button">
                 <a class="results-card button-detailed" href="#">Подробнее</a>
                 <a class="results-card button-choice" href="#">В избранное</a>
-                <img class="results-card-image" src="#" width="18" height="17" alt="Количество звезд отеля">
+              </div>
+              <div class="results-card-image-inner">
+                <img class="results-card-image" src="#" width="18" height="17" alt="Звезды отеля">
                 <img class="results-card-image" src="#" alt="Рейтинг гостиницы">
-        </li>
-        <li class="results-card">
-            <a class="results-card-link" href="product.html">
-              <figure>
-                <img class="results-card-image" src="images/catalog-hotels/hotel-4.jpg" width="300" height="211" alt="">
-              </figure>
-                <h3 class="results-card-title">GreenTree Inn</h3>
-                <p class="results-card-price">Гостиница</p>
-            </a>
-                <span class="results-card-price">От 3000₽</span>
-                <a class="results-card button-detailed" href="#">Подробнее</a>
-                <a class="results-card button-choice" href="#">В избранное</a>
-                <img class="results-card-image" src="images/star.svg" width="18" height="17" alt="Количество звезд отеля">
-                <img class="results-card-image" src="#" alt="Рейтинг гостиницы">
-        </li>
+              </div>
+              </li>
+<!--Отель 4-->
+              <li class="results-card">
+                <figure>
+                  <img class="results-card-image" src="images/catalog-hotels/hotel-4.jpg" width="300" height="211" alt="">
+                </figure>
+                <a class="results-card-link" href="product.html">
+                  <h3 class="results-card-title">GreenTree Inn</h3>
+                </a>
+                <div class="results-card-price">
+                  <p class="results-card-price">Гостиница</p>
+                  <span class="results-card-price">От 3000₽</span>
+                </div>
+                <div class="results-card-button">
+                  <a class="results-card button-detailed" href="#">Подробнее</a>
+                  <a class="results-card button-choice" href="#">В избранное</a>
+                </div>
+                <div class="results-card-image-inner">
+                  <img class="results-card-image" src="images/star.svg" width="18" height="17" alt="Звезды отеля">
+                  <img class="results-card-image" src="#" alt="Рейтинг гостиницы">
+                </div>
+              </li>
       </ul>
 
     <!--<button class="button pagination-show-more" type="button">Загрузить ещё</button>-->
-      <div class="pagination">
-      <ul class="pagination-list">
+      <div class="pagination-container">
+      <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
@@ -200,10 +249,11 @@
       <p class="pagination-quantity">Гостиниц на странице:</p>
     </div>
     </section>
-    </div>
+
 
     <!--Подписка-->
     <section class="newsletter-catalog">
+      <section class="newsletter newsletter-catalog">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -212,7 +262,7 @@
         <button class="button-email" type="submit">Подписаться</button>
       </form>
     </section>
-    </div>
+  </section>
   </main>
 
  <!--Футер-->

@@ -10,10 +10,15 @@
   <div class="container">
     <!--Хедер-->
     <header class="page-header">
-      <a class="navigation-logo">
-        <img class="logo" src="images/logo.png" width="139" height="70" alt="Логотип СЕДОНА">
-      </a>
+
       <nav class="navigation">
+
+        <!--<div class="header-logo">-->
+          <a class="navigation-logo">
+          <img class="logo" src="images/logo.png" width="139" height="70" alt="Логотип СЕДОНА">
+          </a>
+        <!--</div>-->
+
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -25,7 +30,6 @@
             <a class="navigation-link" href="Catalog.html">Гостиницы</a>
           </li>
         </ul>
-
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="images/search.svg">
@@ -38,34 +42,40 @@
             </a>
           </li>
           <li class="navigation-item">
+            <div class="navigation-link navigation-button">
             <a class="navigation-link-button" href="#" >ХОЧУ СЮДА!</a>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="main-container main-index">
-      <div class="page-container">
-      <!--Логотип-->
+        <!--Логотип-->
       <section class="intro">
         <h1 class="visually-hidden">Городок Седона</h1>
+        <div class="intro-logo">
         <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепный город Седона!">
+        </div>
       </section>
 
   <!--Рекламный блок-->
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-          <p class="advantages-title">Седона — небольшой городок в Аризоне,
-       заслуживающий большего!</p>
-          <p class="advantages-title-reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="advantages-lead">
+          <span class="advantages-lead-title">Седона — небольшой городок в Аризоне,
+       заслуживающий большего!</span>
+          <p class="advantages-lead-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
 
-          <ol class="advantages-list"> <!---->
+          <ol class="advantages-list">
       <!--1 блок преимуществ-->
-          <li class="advantages-item advantages-item-full"> <!---->
-            <div class="advantages-item-wrapper"> <!---->
-              <div class="advantages-item-text"> <!---->
-              <h3 class="advantages-title-foto">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <span class="advantages-description-foto">№1</span>
-              <p class="advantages-description-slogan">Седона — не аттракцион для туристов, там течёт
+          <li class="advantages-item advantages-item-full">
+            <div class="advantages-item-wrapper">
+              <div class="advantages-item-text">
+              <h3 class="advantages-item-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <span class="advantages-item-number">№1</span>
+              <p class="advantages-item-features">Седона — не аттракцион для туристов, там течёт
          своя жизнь</p>
               </div>
             <div class="advantages-item-pic">
@@ -73,55 +83,73 @@
             </div>
           </div>
 
-          <ul class="advantages-sublist"> <!---->
-           <li class="advantages-item advantages-housing"> <!---->
-              <img src="images/icons-advice/house.svg" width="75" height="72"  alt="Изображение домик">
-             <h4 class="advantages-title">Жильё</h4>
-             <p class="advantages-description-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-           </li>
-           <li class="advantages-item advantages-meal"> <!---->
-             <img src="images/icons-advice/food.svg" width="74" height="70"  alt="Изображение бургера">
-             <h4 class="advantages-title">Еда</h4>
+          <ul class="advantages-sublist">
+           <li class="advantages-item advantages-housing">
+            <div class="advantages-sublist-wrapper">
+              <div class="advantages-sublist-pic">
+                <img src="images/icons-advice/house.svg" width="75" height="72"  alt="Изображение домик">
+              </div>
+              <h4 class="advantages-sublist-title">Жильё</h4>
+              <p class="advantages-description-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            </li>
+           <li class="advantages-item advantages-meal">
+            <div class="advantages-sublist-wrapper">
+             <div class="advantages-sublist-pic">
+                <img src="images/icons-advice/food.svg" width="74" height="70"  alt="Изображение бургера">
+             </div>
+                <h4 class="advantages-sublist-title">Еда</h4>
              <p class="advantages-description-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-           </li>
-           <li class="advantages-item advantages-souvenirs"> <!---->
-            <img src="images/icons-advice/gift.svg" width="64" height="76"  alt="Изображение подарка">
-            <h4 class="advantages-title">Сувениры</h4>
+            </div>
+            </li>
+           <li class="advantages-item advantages-souvenirs">
+            <div class="advantages-sublist-wrapper">
+            <div class="advantages-sublist-pic">
+              <img src="images/icons-advice/gift.svg" width="64" height="76"  alt="Изображение подарка">
+            </div>
+            <h4 class="advantages-sublist-title">Сувениры</h4>
              <p class="advantages-description-desc">Не только китайского, но и настоящего местного производства!</p>
-           </li>
+          </div>
+            </li>
           </ul>
           </li>
       <!--2 блок-->
-          <li class="advantages-item advantages-item-full"> <!----> <!---->
+          <li class="advantages-item advantages-item-full">
           <div class="advantages-item-wrapper">
             <div class="advantages-item-pic">
             <img src="images/mountains.jpg" width="800" height="384" alt="Фотография гор">
            </div>
            <div class="advantages-item-text">
-           <h3 class="advantages-title-foto">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-            <span class="advantages-description foto-list">№2</span>
-            <p class="advantages-description-slogan">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+           <h3 class="advantages-item-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+            <span class="advantages-item-number">№2</span>
+            <p class="advantages-item-features">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
            </div>
           </div>
           </li>
       <!--3 блок-->
-          <li class="advantages-item advantages-area"> <!---->
-           <h3 class="advantages-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p class="advantages-description-list">№3</p>
-            <p class="advantages-description-desc">Все достопримечательности находятся очень близко</p>
+          <li class="advantages-item advantages-area">
+            <div class="advantages-item-text">
+            <h3 class="advantages-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <span  class="advantages-item-number">№3</span>
+            <p class="advantages-item-features">Все достопримечательности находятся очень близко</p>
+           </div>
           </li>
       <!--4 блок-->
-          <li class="advantages-item advantages-road"> <!---->
-            <h3 class="advantages-title">КРАСИВАЯ ДОРОГА</h3>
-            <p class="advantages-description-list">№4</p>
-            <p class="advantages-description-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="advantages-item advantages-road">
+            <div class="advantages-item-text">
+            <h3 class="advantages-title">КРАСИВАЯ <br>ДОРОГА</h3>
+            <span class="advantages-item-number">№4</span>
+            <p class="advantages-item-features">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
           </li>
      <!--5 блок-->
-          <li class="advantages-item advantages-tourists"> <!---->
-            <h3 class="advantages-title">Мало туристов</h3>
-            <p class="advantages-description-list">№5</p>
-            <p class="advantages-description-desc">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
+          <li class="advantages-item advantages-tourists">
+            <div class="advantages-item-text">
+            <h3 class="advantages-title">Мало <br> туристов</h3>
+            <span class="advantages-item-number">№5</span>
+            <p class="advantages-item-features">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </li>
         </ol>
       </section>
 
@@ -129,20 +157,19 @@
       <section class="appointment">
         <h2 class="appointment-title">Заинтересовались?</h2>
         <p class="appointment-interested">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="navigation-link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="appointment-link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
 
 <!--Подписка-->
     <section class="newsletter">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email">Email</label>
-        <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button-email" type="submit">Подписаться</button>
+        <input class="newsletter-field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+        <button class="newsletter-button-email" type="submit">Подписаться</button>
       </form>
     </section>
-  </div>
 </main>
 
 <!--Подвал-->
