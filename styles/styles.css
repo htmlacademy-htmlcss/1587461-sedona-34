@@ -493,11 +493,15 @@ color: #000000;
 }
 
 .results-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   list-style-type: none;
-  margin: 0;
+  width: 1056px;
+  margin: 0 auto;
+  margin-bottom: 64px;
   padding: 0;
-  flex-wrap: wrap;
+  gap: 18px;
+
 }
 
 figure {
