@@ -41,14 +41,11 @@ html {
   .container {
     width: 1200px;
     margin: 0 auto;
+    background: #FFFFFF;
   }
 
   .main-container {
     flex-grow: 1;
-  }
-
-  .page-container {
-   margin: 0 auto;
   }
 
 /* Header */
@@ -107,15 +104,15 @@ html {
 
 /*Рекламный блок*/
   .intro {
-    display: block;
-    margin: 0 auto;
-    padding: 51px 371px 52px 371px;
     background-image: url("../images/background-mountains.jpg");
     background-size: 100% auto;
-    min-height: 352px;
+    min-height: 485px;
     background-repeat: no-repeat;
     text-align: center;
   }
+
+  .intro-logo {
+    padding-top: 51px;}
 
   .advantages-lead {
     display: flex;
@@ -125,7 +122,7 @@ html {
     min-height: 282px;
   }
 
-  .advantages-lead span {
+  .advantages-lead-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -152,14 +149,14 @@ html {
 .advantages-item-text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   width: 230px;
-  background-color: rgba(131, 179, 211, 0.12);
-  padding: 92px 85px 92px 85px;
+  padding-top: 92px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.advantages-item-text h3 {
+.advantages-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -167,14 +164,14 @@ html {
   margin: 0;
 }
 
-.advantages-item-text span {
+.advantages-item-number {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   padding: 30px 0 30px 0;
 }
 
-.advantages-item-text p {
+.advantages-item-features {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
@@ -216,10 +213,14 @@ html {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0;
+}
+
+.advantages-sublist-title {
   margin: 30px 0 30px 0;
 }
 
-.advantages-item p {
+.advantages-description-desc {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -228,11 +229,6 @@ html {
   min-height: 63px;
   text-align: center;
   margin: 0;
-}
-
-.advantages-title span {
-  min-height: 485px;
-  padding: 51px 371px 52px 371px;
 }
 
 .advantages-list {
@@ -276,8 +272,6 @@ background: rgba(131, 179, 211, 0.2);
 
 /*Заинтересовались*/
 .appointment {
-  display: block;
-  margin: 0 auto;
   min-height: 417px;
   background: #FFFFFF;
   color: #000000;
@@ -312,8 +306,6 @@ background: rgba(131, 179, 211, 0.2);
 
 /*Подписка*/
 .newsletter {
-  display: block;
-  margin: 0 auto;
   background-image: url("../images/newsletter.jpg");
   background-size: 100% auto;
   min-height: 411px;
@@ -389,16 +381,10 @@ color: #000000;
 
 /*Catalog*/
 
-.main-catalog {
-  background: #FFFFFF;
-  min-height: 2023px;
-}
-
 .catalog-filter-container {
   background-image: url("../images/background-filter.jpg");
   background-size: 100% auto;
   min-height: 403px;
-
 }
 
 .catalog-title {
@@ -472,15 +458,6 @@ color: #000000;
 }
 
 /*Каталог отелей*/
-
-.results-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: 1212px;
-  flex-wrap: wrap;
-  background-size: 100% auto;
-}
 
 .results-wrap {
   display: flex;
@@ -557,7 +534,6 @@ figure {
   line-height: 21px;
   color: #333333;
   width: 300px;
-  height: 21px;
   margin: 0;
   padding: 0;
 }
@@ -641,8 +617,6 @@ margin-left: auto;
   background: #F2F2F2;
   color: #000000;
 }
-
-
 
 .field-email {
   font-weight: 400;
