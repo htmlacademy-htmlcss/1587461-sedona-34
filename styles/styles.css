@@ -43,7 +43,7 @@ html {
     width: 1200px;
     margin: 0 auto;
     background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 
   .main-container {
@@ -616,23 +616,23 @@ background: rgba(131, 179, 211, 0.2);
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/*.modal-container-close {
   display: none;
-}
+}*/
 
 .modal {
   position: relative;
   margin: auto;
+  padding: 62px 70px 70px;
   background: #FFFFFF;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  width: 715px;
+  width: 575px;
 }
 
 .modal-title {
-  margin-top: 62px;
-  margin-left: 68px;
-  margin-bottom: 24px;
+  position: absolute;
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -643,10 +643,12 @@ background: rgba(131, 179, 211, 0.2);
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
-  left: 592px;
+  top: 0;
+  left: 0;
   width: 53px;
   height: 53px;
+  margin-top: 50px;
+  margin-left: 518px;
   border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
@@ -678,11 +680,15 @@ background: rgba(131, 179, 211, 0.2);
   background-position: center;
 }
 
+.modal-conten {
+  margin-top: 54px;
+}
+
 .form-label-data {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  margin-left: 70px;
+  margin-top: 63px;
   margin-right: 42px;
   text-align: center;
 }
@@ -693,24 +699,55 @@ background: rgba(131, 179, 211, 0.2);
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  margin-left: 70px;
   margin-right: 62px;
   text-align: center;
 }
 
-.label-children {
-  margin-right: 43px;
-}
-
 .field {
-  width: 420px;
+  width: 410px;
+  height: 50px;
+  padding: 0;
+  margin-top: 98px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: 0;
+}
+
+.field::placeholder {
+  padding-left: 19px;
+  opacity: 1;
+}
+
+.fild-departure {
+  margin-top: 11px;
+}
+
+.data-button {
+  position: absolute;
+  top: 176px;
+  right: 95px;
+  background-image: url("../images/date.svg");
+  width: 15px;
+  height: 15px;
+  border: 0;
+}
+
+.data-button-two {
+  position: absolute;
+  top: 291px;
+  right: 95px;
+  background-image: url("../images/date.svg");
+  width: 15px;
+  height: 15px;
+  border: 0;
 }
 
 .appointment-form-quantity {
   display: flex;
+
 }
 
 .appointment-info {
@@ -718,7 +755,7 @@ background: rgba(131, 179, 211, 0.2);
   font-size: 16px;
   line-height: 21px;
   color: #FF5757;
-  margin-left: 225px;
+  margin-left: 158px;
 }
 
 .appointment-info-data {
@@ -726,7 +763,7 @@ background: rgba(131, 179, 211, 0.2);
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  margin-left: 225px;
+  margin-left: 161px;
 }
 
 .form-label {
@@ -738,12 +775,35 @@ background: rgba(131, 179, 211, 0.2);
   text-align: center;
 }
 
+.form-label-children {
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-right: 43px;
+  text-align: center;
+  align-items: center;
+}
+
+.form-label-exit {
+  margin-right: 37px;
+}
+
+.modal-stok {
+  margin-top: 63px;
+}
+
+.modal-stok-two {
+  position: absolute;
+  top: 243px;
+}
+
 /*Tooltip*/
 
 .tooltip {
   position: absolute;
-  margin-top: 4px;
-  margin-left: 2px;
+  margin-left: 57px;
+  margin-top: 12px;
   width: 25px;
   height: 25px;
 }
@@ -753,6 +813,10 @@ background: rgba(131, 179, 211, 0.2);
   background-color: transparent;
   padding: 0;
   margin: 0;
+  width: 25px;
+  height: 25px;
+  background: #83B3D3;
+  border-radius: 50%;
   display: block;
 }
 
@@ -784,6 +848,9 @@ background: rgba(131, 179, 211, 0.2);
   transform: translateX(-50%);
   z-index: 1;
   display: none;
+  background-image: url("../images/triangle.svg");
+  background-repeat: no-repeat;
+  text-align: left;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -808,12 +875,15 @@ background: rgba(131, 179, 211, 0.2);
   font: inherit;
   color: inherit;
   cursor: inherit;
+  width: 43px;
+  text-align: center;
 }
 
 .visiters-number {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  appearance: textfield;
   background-color: transparent;
   color: #000000;
   border: 0;
@@ -823,7 +893,7 @@ background: rgba(131, 179, 211, 0.2);
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
-  width: 107px;
+  width: 48px;
   border-width: 0;
 }
 
@@ -835,7 +905,6 @@ background: rgba(131, 179, 211, 0.2);
   line-height: 36px;
   width: 575px;
   padding: 0;
-  margin-left: 70px;
   margin-bottom: 70px;
   margin-top: 40px;
 }
