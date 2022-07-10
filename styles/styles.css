@@ -616,9 +616,9 @@ background: rgba(131, 179, 211, 0.2);
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
@@ -643,12 +643,10 @@ background: rgba(131, 179, 211, 0.2);
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  left: 0;
+  top: 54px;
+  right: 70px;
   width: 53px;
   height: 53px;
-  margin-top: 50px;
-  margin-left: 518px;
   border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
@@ -680,11 +678,7 @@ background: rgba(131, 179, 211, 0.2);
   background-position: center;
 }
 
-.modal-conten {
-  margin-top: 54px;
-}
-
-.form-label-data {
+.form-label-date {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -703,10 +697,10 @@ background: rgba(131, 179, 211, 0.2);
   text-align: center;
 }
 
-.field {
-  width: 410px;
+.field-input {
+  width: 388px;
   height: 50px;
-  padding: 0;
+  padding-left: 19px;
   margin-top: 98px;
   font-weight: 400;
   font-size: 18px;
@@ -716,9 +710,26 @@ background: rgba(131, 179, 211, 0.2);
   border: 0;
 }
 
-.field::placeholder {
-  padding-left: 19px;
-  opacity: 1;
+.field-input:hover {
+  background: #E6E6E6;
+  border-radius: 4px;
+}
+
+.field-input:focus {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.field-input:active {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+
+.field-data-button {
+  position: relative;
 }
 
 .fild-departure {
@@ -727,8 +738,8 @@ background: rgba(131, 179, 211, 0.2);
 
 .data-button {
   position: absolute;
-  top: 176px;
-  right: 95px;
+  top: 0;
+  right: 17px;
   background-image: url("../images/date.svg");
   width: 15px;
   height: 15px;
@@ -745,9 +756,14 @@ background: rgba(131, 179, 211, 0.2);
   border: 0;
 }
 
-.appointment-form-quantity {
+.form-quantity {
   display: flex;
+  margin: auto;
+}
 
+.form-quantity-adults {
+  display: flex;
+  width: 288px;
 }
 
 .appointment-info {
@@ -758,7 +774,7 @@ background: rgba(131, 179, 211, 0.2);
   margin-left: 158px;
 }
 
-.appointment-info-data {
+.appointment-info-date {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -766,12 +782,14 @@ background: rgba(131, 179, 211, 0.2);
   margin-left: 161px;
 }
 
-.form-label {
+.form-quantity-children {
   display: flex;
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   margin-left: 42px;
+  width: 230px;
   text-align: center;
 }
 
@@ -787,15 +805,6 @@ background: rgba(131, 179, 211, 0.2);
 
 .form-label-exit {
   margin-right: 37px;
-}
-
-.modal-stok {
-  margin-top: 63px;
-}
-
-.modal-stok-two {
-  position: absolute;
-  top: 243px;
 }
 
 /*Tooltip*/
@@ -831,26 +840,37 @@ background: rgba(131, 179, 211, 0.2);
   color: #83B3D3;
 }
 
-
 .tooltip-text {
-  background-color: #242424;
-  color: #ffffff;
+  display: none;
+  text-transform: none;
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #FFFFFF;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  text-transform: none;
-  padding: 14px 18px 18px 22px;
-  border-radius: 10px;
-  width: 256px;
-  position: absolute;
+  padding: 15px 18px 18px 22px;
+  width: 216px;
+  min-height: 106px;
+  position: relative;
+  margin-top: 10px;
   margin-bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  display: none;
+  text-align: left;
+}
+
+.tooltip-text::before {
   background-image: url("../images/triangle.svg");
   background-repeat: no-repeat;
-  text-align: left;
+  content: "";
+  position: absolute;
+  left: 118px;
+  top: -8px;
+  width: 19px;
+  height: 9px;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -879,6 +899,44 @@ background: rgba(131, 179, 211, 0.2);
   text-align: center;
 }
 
+.icon-plus {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+
+.btn-minus-plus:hover .icon-plus {
+  fill: black;
+}
+
+.btn-minus-plus:focus .icon-plus {
+  fill: black;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.btn-minus-plus:active .icon-plus {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.icon-minus {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.btn-minus-plus:hover .icon-minus {
+  fill: black;
+}
+
+.btn-minus-plus:focus .icon-minus {
+  fill: black;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.btn-minus-plus:active .icon-minus {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+
 .visiters-number {
   font-weight: 400;
   font-size: 18px;
@@ -905,8 +963,25 @@ background: rgba(131, 179, 211, 0.2);
   line-height: 36px;
   width: 575px;
   padding: 0;
-  margin-bottom: 70px;
   margin-top: 40px;
+}
+
+.button-search:hover {
+  background: #68A2CA;
+  border-radius: 10px;
+}
+
+.button-search:focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+  border-radius: 10px;
+}
+
+.button-search:active {
+  background: #68A2CA;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.3);
+  border: 0;
 }
 
 /*Catalog*/
@@ -1019,7 +1094,7 @@ border: none;
 
 .range-wrapper-inputs {
   display: flex;
-  border: 2px solid #FFFFFF;
+  /*border: 2px solid #FFFFFF;*/
   border-radius: 4px;
   margin-top: 34px;
   color: rgba(255,255,255,0.3);
@@ -1035,9 +1110,66 @@ border: none;
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 5px;
   width: 143px;
 }
+
+.catalog-filter-label-from {
+  border: 2px solid #FFFFFF;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label-from {
+  border-left: 2px solid #FFFFFF;
+  border-top:  2px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label-before {
+  border-left: 1px solid #FFFFFF;
+  border-top:  2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-label-from:hover {
+  border: 2px solid #FFFFFF;
+  opacity: 0.6;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label-before:hover {
+  border: 2px solid #FFFFFF;
+  opacity: 0.6;
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-label-from:focus {
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 3px #81B3D2;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label-before:focus {
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 3px #81B3D2;
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-label-from:active {
+  background: #756257;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label-before:active {
+  background: #756257;
+  border: 2px solid #FFFFFF;
+  border-radius: 0 4px 4px 0;
+}
+
 
 .catalog-filter-label-from {
   border-right: 2px solid #FFFFFF;
@@ -1045,9 +1177,7 @@ border: none;
 
 .range-input {
   width: 100px;
-  padding: 0 2px;
   padding-left: 19px;
-  font: inherit;
   text-align: left;
   background-color: transparent;
   border: none;
@@ -1058,6 +1188,10 @@ border: none;
   color: #FFFFFF;
 }
 
+.range-input:active {
+  border: 0;
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1065,7 +1199,7 @@ border: none;
 }
 
 .filter-legend {
-  margin-left: 165px;
+  margin-left: 152px;
   width: 288px;
 }
 
@@ -1101,13 +1235,15 @@ border: none;
   border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked + .control-infrastructure::before
 .control-input[type="checkbox"]:checked + .control-infrastructure::after {
   position: absolute;
   top: 5px;
   left: 4px;
   background-image: url("../images/check.svg");
+  background-repeat: no-repeat;
   content: "";
+  width: 20px;
+  height: 20px;
 }
 
 .control-type {
@@ -1124,7 +1260,7 @@ border: none;
   background: #FFFFFF;
 }
 
-.control:focus .control-typ {
+.control:focus .control-type {
   background: #FFFFFF;
   border: 3px solid #83B3D3;
 }
@@ -1133,7 +1269,7 @@ border: none;
   background: #FFFFFF;
 }
 
-.control-input-type[type="radio"]:checked + .control-type::before {
+.control-input-type[type="radio"]:checked + .control-type::after {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -1143,7 +1279,6 @@ border: none;
   border-radius: 50%;
   content: "";
 }
-
 
 .catalog-filter-button {
   display: flex;
