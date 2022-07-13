@@ -189,20 +189,21 @@ body {
   bottom: 0;
   height: 2px;
   background-color: #756157;
-  top: 40px;
+  top: 100%;
   content: "";
   min-width: 93px;
   margin: 0;
 }
-  .navigation-user-button {
-    width: 130px;
-    background: #756157;
-    text-align: center;
-  }
 
-  .navigation-user-button:hover {
-    background: #615048;
-  }
+.navigation-user-button {
+  width: 130px;
+  background: #756157;
+  text-align: center;
+}
+
+.navigation-user-button:hover {
+  background: #615048;
+}
 
   .navigation-user-button:focus {
     background: #615048;
@@ -1062,6 +1063,7 @@ background: rgba(131, 179, 211, 0.2);
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  color: #FFFFFF;
 }
 
 .breadcrumbs {
