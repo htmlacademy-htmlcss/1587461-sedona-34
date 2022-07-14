@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  min-width: 1280px;
   font-family: "PT Sans", sans-serif;
   font-style: 22px;
   line-height: 26px;
@@ -27,6 +28,7 @@ body {
   background-color: #F2F2F2;
   margin: 0;
 }
+  
 
 .visually-hidden {
   position: absolute;
@@ -290,7 +292,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding: 42px 0 33px 0;
+  padding: 31px 0 34px 0;
 }
 
 .advantages-number {
@@ -299,6 +301,17 @@ body {
   line-height: 21px;
   padding: 35px 0 31px 0;
 }
+
+.reasons-item .reasons-item-road {
+  padding-left: 83px; 
+  padding-right: 83px;
+}
+
+/*.reasons-item-road {
+  padding-left: 0; 
+  padding-right: 83px;
+}*/
+
 
 .advantages-item-features {
   width: 230px;
@@ -432,18 +445,18 @@ background: rgba(131, 179, 211, 0.2);
   margin-top: 88px;
   text-transform: uppercase;
   align-self: center;
+  box-sizing: border-box;  
 }
 
 .appointment-interested  {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  width: 580px;
+  width: 100%;
   min-height: 52px;
   text-align: center;
   margin-top: 4px;
   align-self: center;
-  white-space: pre;
 }
 
 .appointment-button {
@@ -552,6 +565,14 @@ background: rgba(131, 179, 211, 0.2);
   padding: 12px 15px;
   width: 200px;
   margin: 0;
+}
+
+.button-email:hover {
+  background: #68A2CA;
+}
+
+.button-email:focus {
+  background: #68A2CA;
 }
 
 .newsletter-catalog p {
@@ -1093,6 +1114,14 @@ background: rgba(131, 179, 211, 0.2);
 
 }
 
+.breadcrumbs-link-index {
+  text-decoration: none;
+  fill: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .breadcrumbs-link {
   text-decoration: none;
   fill: #FFFFFF;
@@ -1100,6 +1129,21 @@ background: rgba(131, 179, 211, 0.2);
   font-size: 16px;
   line-height: 21px;
   
+}
+
+.breadcrumbs-link-index:hover {
+  color:rgba(255, 255, 255, 0.6);
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-index:focus {
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-link-index:active {
+  color: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-link:hover {
@@ -1217,8 +1261,8 @@ background: rgba(131, 179, 211, 0.2);
 
 .catalog-filter-label {
   display: flex;
-  width: 141px;
-  height: 45px;
+  width: 140px;
+  height: 43px;
   align-items: center;
   font-weight: 400;
   font-size: 18px;
@@ -1298,6 +1342,7 @@ background: rgba(131, 179, 211, 0.2);
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+  outline: none;
 }
 
 .range-input:active {
