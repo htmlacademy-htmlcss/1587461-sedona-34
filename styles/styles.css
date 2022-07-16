@@ -1509,22 +1509,23 @@ background: rgba(131, 179, 211, 0.2);
 /*Каталог отелей*/
 
 
-.results-wrap {
+/*.results-wrap {
   display: flex;
   text-align: center;
   margin: 0 auto;
   justify-content: space-between;
-}
+}*/
 
 .sorting-container {
   display: flex;
   align-items: center;
   min-height: 160px;
-  padding: 0 70px 0 71px;
-
+  padding: 0 0 0 71px;
+  margin: 0 auto;
 }
 
-.results-title {
+.sorting-container-title {
+  display: inline-block;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1535,37 +1536,61 @@ background: rgba(131, 179, 211, 0.2);
 }
 
 .select-control {
+  display: flex;
+  align-items: center;
+  padding-left: 17px;
+  color: #333333;
+  min-width: 290px;
+  min-height: 49px;
+  margin-left: 193px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
-  width: 290px;
-  height: 49px;
-  margin-left: 181px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
+  margin-top: -3px;
+  background: url("../images/arrow.svg") no-repeat 93% 50%;
+  appearance: none;
 }
 
-.sorting-card-grid {
+.select-control:hover {
+  border: 2px solid #83b3d3;
+}
+
+.select-control:focus-visible {
+  border: 2px solid #83b3d3;
+  outline: none;
+}
+
+.select-control:active {
+  border: 2px solid #e6e6e6;
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.sorting-card-wrapper {
   display: flex;
+  min-width: 160px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: 70px;
 }
 
 .card-grid-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
+  width: 44px;
   height: 44px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  flex-direction: column;
-  margin-right: 4px;
-  margin-left: 4px;
+  margin: 0 0 0 8px;
+  background-color: #ffffff;
 }
 
 .card-grid-toggle-current {
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 
@@ -1573,11 +1598,6 @@ background: rgba(131, 179, 211, 0.2);
  border: 2px solid #000000;
   border-radius: 4px;
 }
-
-.card-grid-toggle:hover {
-  border: 2px solid #000000;
-  border-radius: 4px;
- }
 
 .card-grid-toggle:focus {
   border: 2px solid #68A2CA;
@@ -1597,20 +1617,22 @@ background: rgba(131, 179, 211, 0.2);
   display: grid;
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
-  width: 1011px;
+  width: 1015px;
   margin: 0 auto;
-  margin-bottom: 64px;
+  margin-bottom: 58px;
   padding: 0;
-  gap: 18px;
-  min-height: 867px;
-}
-
-figure {
-  margin-left: 0;
-  margin-right: 0;
+  column-gap: 18px;
+  min-height: 884px;
+  row-gap: 8px;
 }
 
 .results-card {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.results-item {
   display: flex;
   flex-direction: column;
   padding-right: 38px;
@@ -1629,22 +1651,24 @@ figure {
 }
 
 .results-card-title {
+  font-family: 'PT Sans';
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-decoration: none;
-  margin: 0;
+  margin: 5px 0 0 0;
 }
 
 .results-card-price{
   display: flex;
+  color: #333333;
+  margin: 9px 0 0 0;
+  padding: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
-  margin: 0;
-  padding: 0;
+  bottom: 0;
 }
 
 .results-card-price p {
@@ -1719,6 +1743,10 @@ figure {
   padding-top: 10px;
 }
 
+.stars-img {
+  align-self: center;
+}
+
 .button-choice-green {
   background: #7DB54F;
 }
@@ -1769,7 +1797,7 @@ figure {
 
 
 .pagination-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 9px;
 }
 
 .pagination-link {
@@ -1782,7 +1810,7 @@ figure {
   line-height: 36px;
   background: #82B3D3;
   border-radius: 4px;
-  padding: 16px;
+  padding: 12px;
   text-decoration: none;
   color: #FFFFFF;
   text-align: center;
@@ -1800,6 +1828,10 @@ figure {
   background: #82B3D3;
   border: 1px solid #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-number {
+
 }
 
 .pagination-quantity {
