@@ -197,16 +197,16 @@ body {
   background: #615048;
 }
 
-  .navigation-user-button:focus {
-    background: #615048;
-    box-shadow: 0 0 0 3px #83b3d3;
-    outline: none
-  }
+.navigation-user-button:focus {
+  background: #615048;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none
+}
 
-  .navigation-user-button:active {
-    color: rgba(255, 255, 255, 0.3);
-    background: #756157;
-  }
+.navigation-user-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #756157;
+}
 
 /**/
   .intro {
@@ -241,11 +241,6 @@ body {
   line-height: 26px;
   color: #333333;
 }
-
-/*.intro-decorative {
-  position: absolute;
-  transform: translate(-50%, 31%);
-}*/
 
 .advantages-item {
   font-family: 'PT Sans';
@@ -755,7 +750,7 @@ line-height: 36px;
   fill: rgba(117, 97, 87, 0.3);
 }
 
-/*Модальное окно*/
+/*modal window*/
 
 .modal-container {
   position: fixed;
@@ -767,9 +762,11 @@ line-height: 36px;
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/*Uncomment below to disable modal-container*/
+
+/*.modal-container-close {
   display: none;
-}
+}*/
 
 .modal {
   position: relative;
@@ -779,6 +776,10 @@ line-height: 36px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   width: 575px;
+}
+
+.modal-search {
+  min-width: 575px;
 }
 
 .modal-title {
@@ -840,9 +841,10 @@ line-height: 36px;
   line-height: 26px;
   text-align: left;
   width: 155px;
+  padding-top: 12px;
 }
  .field-date-button {
-  width: 388px;
+  width: 399px;
  }
 
 .field-input-arrival-date {
@@ -1033,8 +1035,6 @@ line-height: 36px;
   display: block;
 }
 
- /*кнопка -+*/
-
 .quantity-wrapper {
   display: flex;
   background: #F2F2F2;
@@ -1147,7 +1147,6 @@ line-height: 36px;
   background-repeat: no-repeat;
   min-height: 403px;
   padding-left: 70px;
-  padding-right: 70px;
 }
 
 .catalog-title {
@@ -1265,7 +1264,6 @@ line-height: 36px;
   list-style-type: none;
   align-self: start;
   padding: 0;
-  /*margin-right: 107px;*/
   margin-top: 28px;
 }
 
@@ -1286,6 +1284,7 @@ line-height: 36px;
   background-color: rgba(255,255,255,0.3);
   border-radius: 2px;
   margin-top: 28px;
+  outline: none
 }
 
 .range-bar {
@@ -1325,11 +1324,12 @@ line-height: 36px;
 .range-wrapper-inputs {
   display: flex;
   border-radius: 4px;
-  margin-top: 34px;
+  margin-top: 37px;
   color: rgba(255,255,255,0.3);
 }
 
 .catalog-filter-label {
+  position: relative;
   display: flex;
   width: 140px;
   height: 43px;
@@ -1337,96 +1337,81 @@ line-height: 36px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-}
-
-.catalog-filter-label-from {
-  border: 2px solid #FFFFFF;
-  border-radius: 4px 0 0 4px;
-}
-
-.catalog-filter-label-from {
-  border-left: 2px solid #FFFFFF;
-  border-top:  2px solid #FFFFFF;
-  border-right: 1px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
-  border-radius: 4px 0 0 4px;
-}
-
-.catalog-filter-label-before {
-  border-left: 1px solid #FFFFFF;
-  border-top:  2px solid #FFFFFF;
-  border-right: 2px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
-  border-radius: 0 4px 4px 0;
-}
-
-.catalog-filter-label-from:hover {
-  border: 2px solid #FFFFFF;
-  opacity: 0.6;
-  border-radius: 4px 0 0 4px;
-}
-
-.catalog-filter-label-before:hover {
-  border: 2px solid #FFFFFF;
-  opacity: 0.6;
-  border-radius: 0 4px 4px 0;
-}
-
-.catalog-filter-label-from:focus {
-  border: 2px solid #FFFFFF;
-  box-shadow: 3px #81B3D2;
-  border-radius: 4px 0 0 4px;
-}
-
-.catalog-filter-label-before:focus {
-  border: 2px solid #FFFFFF;
-  box-shadow: 3px #81B3D2;
-  border-radius: 0 4px 4px 0;
-}
-
-.catalog-filter-label-from:active {
-  background: #756257;
-  border: 2px solid #FFFFFF;
-  border-radius: 4px 0 0 4px;
-}
-
-.catalog-filter-label-before:active {
-  background: #756257;
-  border: 2px solid #FFFFFF;
-  border-radius: 0 4px 4px 0;
-}
-
-.catalog-filter-label-from {
-  border-right: 2px solid #FFFFFF;
-}
-
-.range-input {
-  width: 100px;
-  padding-left: 19px;
-  text-align: left;
-  background-color: transparent;
+  outline: none;
   border: none;
-  appearance: textfield;
-  font-weight: 400;
+}
+
+.range-input-from {
+  max-width: 122px;
+  height: 42px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px 0 0 4px;
+  background: transparent;
+  color: #ffffff;
+  padding-left: 17px;
+  font-family: "PT Sans";
   font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
+  line-height: 23px;
+  font-weight: 400;
   outline: none;
 }
 
-.range-input:active {
-  border: 0;
+.range-input-before {
+  max-width: 122px;
+  height: 42px;
+  border: 2px solid #FFFFFF;
+  border-radius: 0 4px 4px 0;
+  background: transparent;
+  color: #ffffff;
+  padding-left: 17px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  outline: none;
+  margin-left: 3px;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range-from {
+  position: absolute;
+  top: 9px;
+  left: 111px;
+}
+
+.range-before {
+  position: absolute;
+  top: 9px;
+  left: 107px;
+}
+
+.range-input-from:hover,
+.range-input-before:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-input-from:focus ,
+.range-input-before:focus {
+  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+  outline: none;
+}
+
+.range-input-from:active,
+.range-input-before:active {
+  background-color: #756257;
+  border: 2px solid #FFFFFF;
+  box-shadow: none;
+}
+
+.range-input-from::-webkit-outer-spin-button,
+.range-input-from::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
-.filter-legend {
-  margin-left: 70px;
-  width: 288px;
+.range-input-before::-webkit-outer-spin-button,
+.range-input-before::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .control {
@@ -1796,7 +1781,7 @@ line-height: 36px;
   width: 120px;
   padding-right: 20px;
   margin-right: 20px;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .stars-img {
@@ -1813,7 +1798,8 @@ line-height: 36px;
   line-height: 20px;
   text-transform: uppercase;
   width: 140px;
-  padding-top: 9px;
+  padding-top: 8px;
+  padding-left: 0;
   margin: 0;
   background: #F2F2F2;
   color: #333333;
