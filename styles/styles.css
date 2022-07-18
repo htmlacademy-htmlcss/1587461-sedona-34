@@ -579,9 +579,9 @@ background: rgba(131, 179, 211, 0.2);
   text-align: center;
   text-transform: uppercase;
   font-family: 'PT Sans';
-font-weight: 700;
-font-size: 20px;
-line-height: 36px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   padding: 12px 15px;
   width: 200px;
   margin: 0;
@@ -599,11 +599,8 @@ line-height: 36px;
   color: #000000;
 }
 
-/*Footer*/
-
 .page-footer {
   background: #FFFFFF;
-  /*min-height: 120px;*/
 }
 
 .page-footer-container {
@@ -764,9 +761,9 @@ line-height: 36px;
 
 /*Uncomment below to disable modal-container*/
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
@@ -827,8 +824,6 @@ line-height: 36px;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/*Дата заезда*/
 
 .form-arrival-date {
   display: flex;
@@ -971,7 +966,6 @@ line-height: 36px;
 }
 
 /*Tooltip*/
-
 .tooltip {
   position: absolute;
   margin-left: 57px;
@@ -1667,10 +1661,10 @@ line-height: 36px;
   list-style-type: none;
   width: 1015px;
   margin: 0 auto;
-  margin-bottom: 58px;
+  margin-bottom: 73px;
   padding: 0;
   column-gap: 18px;
-  min-height: 884px;
+  min-height: 869px;
   row-gap: 8px;
 }
 
@@ -1771,6 +1765,11 @@ line-height: 36px;
   width: 110px;
 }
 
+.button-choice-green {
+  background: #7DB54F;
+  width: 110px;
+}
+
 .button-choice-green:hover {
   background: #6C9E42;
 }
@@ -1795,9 +1794,7 @@ line-height: 36px;
   align-self: center;
 }
 
-.button-choice-green {
-  background: #7DB54F;
-}
+
 
 .results-rating-image {
   font-weight: 400;
