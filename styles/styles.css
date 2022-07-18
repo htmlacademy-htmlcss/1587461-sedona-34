@@ -68,7 +68,6 @@ body {
   cursor: pointer;
 }
 
-/* Header */
 .page-header {
   padding: 0 70px 0 70px;
 }
@@ -208,17 +207,14 @@ body {
   background: #756157;
 }
 
-/**/
-  .intro {
-    background: url("../images/divider.svg") left 0 bottom 0,
+.intro {
+  background: url("../images/divider.svg") left 0 bottom 0,
     url("../images/background-mountains.jpg") center/cover;
-    min-height: 434px;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding-top: 51px;
-  }
-
-/*Advantage blocks*/
+  min-height: 434px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 51px;
+}
 
 .advantages-lead-title {
   font-weight: 700;
@@ -434,7 +430,6 @@ body {
 background: rgba(131, 179, 211, 0.2);
 }
 
-/*Appointment*/
 .appointment {
   display: flex;
   flex-direction: column;
@@ -492,7 +487,6 @@ background: rgba(131, 179, 211, 0.2);
   color: rgba(255, 255, 255, 0.3);
 }
 
-/*Newsletter*/
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -555,6 +549,7 @@ background: rgba(131, 179, 211, 0.2);
   margin: 0;
   outline: none;
 }
+
 .field-email:hover {
   background-color: #e6e6e6;
 }
@@ -569,7 +564,6 @@ background: rgba(131, 179, 211, 0.2);
   background-color: #ffffff;
   outline: 2px solid #ff5757;
 }
-
 
 .button-email {
   background: #82B3D3;
@@ -965,7 +959,6 @@ background: rgba(131, 179, 211, 0.2);
   margin-right: 37px;
 }
 
-/*Tooltip*/
 .tooltip {
   position: absolute;
   margin-left: 57px;
@@ -1139,7 +1132,6 @@ background: rgba(131, 179, 211, 0.2);
 }
 
 /*Catalog*/
-
 .catalog-filter-container {
   display: flex;
   flex-direction: column;
@@ -1556,8 +1548,6 @@ background: rgba(131, 179, 211, 0.2);
   border: 0;
 }
 
-/*Каталог отелей*/
-
 .sorting-container {
   display: flex;
   align-items: center;
@@ -1794,8 +1784,6 @@ background: rgba(131, 179, 211, 0.2);
   align-self: center;
 }
 
-
-
 .results-rating-image {
   font-weight: 400;
   font-size: 16px;
@@ -1811,7 +1799,6 @@ background: rgba(131, 179, 211, 0.2);
   text-align: center;
 }
 
-/* Пагинация*/
 .pagination-container {
   display: flex;
   min-height: 115px;
@@ -1820,7 +1807,6 @@ background: rgba(131, 179, 211, 0.2);
   align-items: center;
   margin: 0 70px 0 68px;
   justify-content: space-between;
-
 }
 
 .pagination-line {
@@ -1828,7 +1814,6 @@ background: rgba(131, 179, 211, 0.2);
   transform: rotate(180deg);
   width: 1055;
 }
-
 
 .pagination {
   display: flex;
@@ -1883,7 +1868,6 @@ background: rgba(131, 179, 211, 0.2);
 .pagination-number {
   display: flex;
   align-items: center;
-
 }
 
 .pagination-quantity {
@@ -1923,7 +1907,6 @@ color: #333333;
   border: 2px solid #e6e6e6;
   color: rgba(51, 51, 51, 0.3);
 }
-
 
 .button-email:hover {
   background: #68A2CA;
